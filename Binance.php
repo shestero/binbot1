@@ -150,11 +150,6 @@ public static function cancelOrder($symbol, $orderId) {
 
     $response = Http::withHeaders($headers)->send("DELETE", $fullUrl)->json();
     return $response;
-
-    //$response = Http::withHeaders($headers)->delete( $fullUrl );
-    //$json = $response->body();
-    // return json_decode( $json )[0]; // Error: Cannot use object of type stdClass as array
-    // return json_decode( $json );
 }
 
 // ---- loggin - not about Binance:
